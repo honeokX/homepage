@@ -1,11 +1,13 @@
 import type React from 'react';
-import '../styles/globals.css';
-import { getConfig } from '@/lib/config';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+
+import { getConfig } from '@/lib/config';
 import { ThemeProvider } from '@/components/theme/theme-provider';
 import { ModeToggle } from '@/components/theme/toggle-theme';
-import { CustomCursor } from '@/components/interactive/custom-cursor';
+// import { CustomCursor } from '@/components/interactive/custom-cursor';
+
+import '../styles/globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -39,7 +41,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <ModeToggle />
-          <CustomCursor />
+          {/* <CustomCursor /> */}
           {children}
         </ThemeProvider>
       </body>
