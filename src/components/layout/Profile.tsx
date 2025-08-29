@@ -52,13 +52,13 @@ export function Profile({ profile, socialLinks }: ProfileProps) {
                   key={`title-${index}`}
                   className={`inline-block ${index >= 7 ? 'text-[var(--theme-primary)] dark:text-[var(--theme-secondary)]' : ''}`}
                   animate={{
-                    y: [0, -15, 0],
+                    // y: [0, -15, 0],
                   }}
                   transition={{
                     duration: 0.6,
                     ease: 'easeInOut',
                     delay: index * 0.05,
-                    repeat: Infinity,
+                    // repeat: Infinity,
                     repeatDelay: 2,
                   }}
                 >
