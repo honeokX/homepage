@@ -1,6 +1,7 @@
 import type React from 'react';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
 
 import { getConfig } from '@/lib/config';
 import { ThemeProvider } from '@/components/theme/theme-provider';
@@ -44,6 +45,12 @@ export default function RootLayout({
           {/* <CustomCursor /> */}
           {children}
         </ThemeProvider>
+
+        <Script
+          src="https://umami.honeok.com/script.js"
+          data-website-id="43a58ac3-5df4-4df5-b420-f1e2e6b7f8b1"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
